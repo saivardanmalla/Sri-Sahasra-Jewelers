@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sri Sahasra Jewellers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
+  <style>
+    @font-face {
+      font-family: "CinzelLocal";
+      src: url("fonts/Cinzel-wght.ttf") format("truetype");
+      font-weight: 400 700;
+      font-style: normal;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #F7F1E8;
+    }
+    .card {
+      position: relative;
+      width: 1200px;
+      height: 630px;
+      background:
+        radial-gradient(ellipse at 50% 42%, #F7F1E8 0%, #E8DCC8 72%, #E8D5B0 100%);
+      color: #2C2416;
+      box-sizing: border-box;
+    }
+    .frame {
+      position: absolute;
+      inset: 28px;
+      border: 1.5px solid #C4A265;
+      pointer-events: none;
+    }
+    .frame-inner {
+      position: absolute;
+      inset: 36px;
+      border: 0.75px solid rgba(196, 162, 101, 0.55);
+      pointer-events: none;
+    }
+    .corner {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border: 1.5px solid #C4A265;
+    }
+    .corner.tl { top: 22px; left: 22px; border-right: 0; border-bottom: 0; }
+    .corner.tr { top: 22px; right: 22px; border-left: 0; border-bottom: 0; }
+    .corner.bl { bottom: 22px; left: 22px; border-right: 0; border-top: 0; }
+    .corner.br { bottom: 22px; right: 22px; border-left: 0; border-top: 0; }
+    .lockup {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 140px;
+    }
+    .eyebrow {
+      font-family: Cinzel, CinzelLocal, "Liberation Serif", serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.42em;
+      text-transform: uppercase;
+      color: #C4A265;
+      margin: 0 0 22px;
+    }
+    .rule {
+      width: 72px;
+      height: 1px;
+      background: #C4A265;
+      margin: 0 0 28px;
+      position: relative;
+    }
+    .rule::before,
+    .rule::after {
+      content: "";
+      position: absolute;
+      top: -2.5px;
+      width: 6px;
+      height: 6px;
+      border: 1px solid #C4A265;
+      transform: rotate(45deg);
+      background: #F7F1E8;
+    }
+    .rule::before { left: -10px; }
+    .rule::after { right: -10px; }
+    h1 {
+      margin: 0;
+      font-family: Cinzel, CinzelLocal, "Liberation Serif", serif;
+      font-weight: 700;
+      font-size: 64px;
+      letter-spacing: 0.18em;
+      line-height: 1;
+      color: #2C2416;
+    }
+    h2 {
+      margin: 18px 0 0;
+      font-family: Cinzel, CinzelLocal, "Liberation Serif", serif;
+      font-weight: 600;
+      font-size: 32px;
+      letter-spacing: 0.46em;
+      line-height: 1;
+      color: #C4A265;
+    }
+    .rule-mid {
+      width: 220px;
+      height: 1px;
+      margin: 22px 0 0;
+      background: linear-gradient(90deg, transparent, #C4A265, transparent);
+    }
+    .tagline {
+      margin: 20px 0 0;
+      font-family: "Cormorant Garamond", "Liberation Serif", serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: 0.18em;
+      color: #2C2416;
+      opacity: 0.78;
+    }
+    .lotus {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 48px;
+      height: 28px;
+    }
+    .lotus.top { top: 58px; }
+    .lotus.bottom { bottom: 52px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="frame"></div>
+    <div class="frame-inner"></div>
+    <span class="corner tl"></span>
+    <span class="corner tr"></span>
+    <span class="corner bl"></span>
+    <span class="corner br"></span>
+    <svg class="lotus top" viewBox="0 0 64 36" fill="none" aria-hidden="true">
+      <path d="M32 32c-3.2-6.8-2.2-14.2 0-20 2.2 5.8 3.2 13.2 0 20Z" fill="#C4A265"/>
+      <path d="M32 32c-7-5-14-7.5-20-8 6.2-1.8 13.4-.2 20 8Z" fill="#C4A265" opacity=".85"/>
+      <path d="M32 32c7-5 14-7.5 20-8-6.2-1.8-13.4-.2-20 8Z" fill="#C4A265" opacity=".85"/>
+      <path d="M32 32c-9.5-1.5-17.5.5-24 6 8-1.5 16.2-2.2 24-6Z" fill="#C4A265" opacity=".55"/>
+      <path d="M32 32c9.5-1.5 17.5.5 24 6-8-1.5-16.2-2.2-24-6Z" fill="#C4A265" opacity=".55"/>
+      <circle cx="32" cy="12" r="2.2" fill="#C4A265"/>
+    </svg>
+    <div class="lockup">
+      <p class="eyebrow">Brodipet · Guntur</p>
+      <div class="rule"></div>
+      <h1>SRI SAHASRA</h1>
+      <h2>JEWELLERS</h2>
+      <div class="rule-mid"></div>
+      <p class="tagline">Fine Gold · Diamond · Silver</p>
+    </div>
+    <svg class="lotus bottom" viewBox="0 0 64 36" fill="none" aria-hidden="true">
+      <path d="M32 32c-3.2-6.8-2.2-14.2 0-20 2.2 5.8 3.2 13.2 0 20Z" fill="#C4A265"/>
+      <path d="M32 32c-7-5-14-7.5-20-8 6.2-1.8 13.4-.2 20 8Z" fill="#C4A265" opacity=".85"/>
+      <path d="M32 32c7-5 14-7.5 20-8-6.2-1.8-13.4-.2-20 8Z" fill="#C4A265" opacity=".85"/>
+      <path d="M32 32c-9.5-1.5-17.5.5-24 6 8-1.5 16.2-2.2 24-6Z" fill="#C4A265" opacity=".55"/>
+      <path d="M32 32c9.5-1.5 17.5.5 24 6-8-1.5-16.2-2.2-24-6Z" fill="#C4A265" opacity=".55"/>
+      <circle cx="32" cy="12" r="2.2" fill="#C4A265"/>
+    </svg>
+  </div>
+</body>
+</html>
